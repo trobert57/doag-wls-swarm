@@ -1,10 +1,10 @@
 # WebLogic-Swarm-Mode
 This is an example of setting up a WebLogic Multi Host Cluster running in Docker Swarm Mode. 
-It requires a minimum of three hosts: 
-  one host is running WebLogic Admin Server, 
-  two hosts are running WebLogic Managed Servers.
+Although everything can run on a single host, it is suggested to have three hosts (or VMs) available:
+  one running WebLogic Admin Server, 
+  two running WebLogic Managed Servers.
 All serving the same sample application.
-All three hosts must be able to talk to each other through some network.
+All three hosts (VMs) must be able to talk to each other through some network.
 To setup this cluster:
 1.  Install Docker 17.03+
 2.  Build the Docker Image for oracle/serverjre:8 \
